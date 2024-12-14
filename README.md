@@ -1,9 +1,10 @@
-# plot_price_prediction
+# Plot_price_prediction
 
 House Price Prediction Model
 This project predicts house prices based on key features like BHK (Bedrooms, Hall, Kitchen), bathrooms, square footage, and location. Using real estate data from Bengaluru, the model incorporates extensive data cleaning, feature engineering, and machine learning techniques to deliver reliable predictions.
 
 Table of Contents
+
 Overview
 Dataset
 Data Preprocessing
