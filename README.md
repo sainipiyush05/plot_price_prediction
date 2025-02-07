@@ -1,97 +1,111 @@
-# Plot_price_prediction
+# 📈 Plot Price Prediction using Machine Learning
 
-House Price Prediction Model
-This project predicts house prices based on key features like BHK (Bedrooms, Hall, Kitchen), bathrooms, square footage, and location. Using real estate data from Bengaluru, the model incorporates extensive data cleaning, feature engineering, and machine learning techniques to deliver reliable predictions.
+Accurately predicting plot prices is essential for real estate investors, developers, and buyers to make informed decisions. This project leverages machine learning techniques to forecast plot prices based on various features such as location, size, and amenities.
 
-Table of Contents
+-----
 
-Overview
+## 📋 Table of Contents
 
-Dataset
+- [✨ Features](#-features)
+- [🛠 Technologies Used](#-technologies-used)
+- [🚀 Getting Started](#-getting-started)
+- [⚙️ How It Works](#-how-it-works)
+- [📊 Results](#-results)
+- [📂 Dataset](#-dataset)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 
-Data Preprocessing
+-----
 
-Features
+## ✨ Features
 
-Model Training
+✅ **Data Preprocessing** – Cleans and prepares the dataset for analysis  
+✅ **Exploratory Data Analysis (EDA)** – Provides insights into data distributions and relationships  
+✅ **Model Training** – Utilizes machine learning algorithms to predict plot prices  
+✅ **Model Evaluation** – Assesses model performance using metrics like RMSE and R²  
+✅ **Visualization** – Offers graphical representations of predictions vs. actual prices  
 
-Usage
+-----
 
-Dependencies
+## 🛠 Technologies Used
 
-Overview
+- 🐍 Python  
+- 📒 Jupyter Notebook  
+- 🏷️ Pandas  
+- 🔢 NumPy  
+- 🤖 Scikit-learn  
+- 📊 Matplotlib  
+- 🎨 Seaborn  
 
-The House Price Prediction Model analyzes property data and provides price estimates based on key inputs. The model uses Linear Regression for its predictions and is trained on a dataset containing various attributes of properties in Bengaluru.
+---
 
-Dataset
+## 🚀 Getting Started  
 
-The dataset used contains information about:
+Follow these steps to set up and run the project:  
 
-Area type (e.g., Super Built-Up Area)
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/sainipiyush05/plot_price_predictions.git
+cd plot_price_predictions
+```
 
-Size (e.g., 2 BHK, 3 BHK)
+### 2️⃣ Install dependencies  
+Ensure Python is installed, then run:  
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn
+```
 
-Total square footage
+### 3️⃣ Run the Jupyter Notebook  
+```bash
+jupyter notebook plot_price_prediction.ipynb
+```
 
-Price
+---
 
-Location
+## ⚙️ How It Works  
 
-Data source: [Bengaluru Housing Dataset].
+📌 **Step 1: Data Collection**  
+- The dataset contains information on various plots, including features like location, size, and amenities.  
 
-Data Preprocessing
+📌 **Step 2: Data Preprocessing**  
+- Handles missing values, encodes categorical variables, and scales numerical features to prepare the data for modeling.  
 
-Handling Missing Values
-Removed rows with missing data in key fields.
+📌 **Step 3: Exploratory Data Analysis (EDA)**  
+- Analyzes data distributions and relationships between features to gain insights.  
 
-Feature Engineering
+📌 **Step 4: Model Training**  
+- Applies machine learning algorithms such as Linear Regression, Decision Trees, and Random Forests to predict plot prices.  
 
-Extracted numeric values for BHK from text.
-Converted non-numeric ranges (e.g., 2100-2850 sqft) into average values.
-Added a price_per_sqft feature for better outlier detection.
-Dimensionality Reduction
-Locations with fewer than 10 entries were grouped under the category "other".
+📌 **Step 5: Model Evaluation**  
+- Evaluates model performance using metrics like Root Mean Squared Error (RMSE) and R² score.  
 
-Outlier Removal
+📌 **Step 6: Visualization**  
+- Visualizes the comparison between predicted and actual plot prices to assess model accuracy.  
 
-Removed unrealistic entries where total_sqft/BHK < 300.
-Eliminated properties with excessive bathrooms (bathrooms > BHK + 2).
-One-Hot Encoding
-Encoded location data to make it suitable for machine learning models.
+---
 
-Features
+## 📊 Results  
 
-The final dataset includes:
+The analysis results in a predictive model capable of estimating plot prices with reasonable accuracy. Detailed performance metrics and visualizations are provided within the Jupyter Notebook.  
 
-BHK: Number of bedrooms, halls, and kitchens.
-Bath: Number of bathrooms.
-Total Square Footage.
-Location: One-hot encoded categorical feature.
-Price: Target variable (in lakhs).
-Model Training
-The model is trained using:
+---
 
-Linear Regression as the primary algorithm.
+## 📂 Dataset  
 
-GridSearchCV for hyperparameter tuning and evaluating alternative models like:
-Lasso Regression
-Decision Tree Regressor
-The trained model is serialized as a .pickle file for deployment.
+The dataset used in this project includes various features relevant to plot pricing. Ensure you have the dataset in the project directory before running the analysis.  
 
-Dependencies
+---
 
-Python 3.x
+## 🤝 Contributing  
 
-Libraries:
+Contributions are welcome! If you have suggestions or improvements, feel free to **fork**, **open an issue**, or **submit a pull request**. Let's work together to enhance this project! 🚀  
 
-pandas
+---
 
-numpy
+## 📜 License  
 
-scikit-learn
+This project is licensed under the **MIT License**.  
 
-matplotlib
+---
 
-pickle
-
-json
+### 🌟 If you find this project helpful, don't forget to **star ⭐ the repository!**  
