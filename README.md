@@ -19,7 +19,7 @@ Accurately predicting plot prices is essential for real estate investors, develo
 
 ## ✨ Features
 
-✅ **Data Preprocessing** – Cleans and prepares the dataset for analysis  
+✅ **Data Preprocessing** – Cleans and prepares the dataset for analysis. 
 ✅ **Exploratory Data Analysis (EDA)** – Provides insights into data distributions and relationships  
 ✅ **Model Training** – Utilizes machine learning algorithms to predict plot prices  
 ✅ **Model Evaluation** – Assesses model performance using metrics like RMSE and R²  
